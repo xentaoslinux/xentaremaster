@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+import os
+import commands
+
+launcher = commands.getoutput("//usr/lib/xentaos/xentaRemaster/common-launcher.py")
+os.system("%s /usr/lib/xentaos/xentaRemaster/xentaRemaster.py" % launcher)
+
+

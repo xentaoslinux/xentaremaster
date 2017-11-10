@@ -1,0 +1,38 @@
+#!/usr/bin/python
+
+import os, sys, string
+
+if os.getuid() != 0:
+	print "Must be run as root"
+	sys.exit(1)
+
+if len(sys.argv) < 3:
+	print "Usage: xenta-translation-include xentatool language"
+	sys.exit(1)
+
+tool = sys.argv[1]
+language = sys.argv[2]
+
+if not os.path.exists("/usr/lib/xentaos/" + tool):
+	print "Tool /usr/lib/xentaos/" + tool + " does not exist"
+	sys.exit(1)
+
+if not os.path.exists(language + ".po"): 
+	print "No language file found: " + language + ".po"
+	sys.exit(1)
+
+print "tool: " + tool
+print "language: " + language
+
+os.system("mkdir -p /usr/lib/xentaos/" + tool + "/locale/" + language + "/LC_MESSAGES")
+os.system("mv " + language + ".po /usr/lib/xentaos/" + tool + "/locale/" + language + "/LC_MESSAGES/messages.po")
+os.chdir("/usr/lib/xentaos/" + tool + "/locale/" + language + "/LC_MESSAGES/")
+os.system("msgfmt messages.po")
+
+cmd = string.lower(tool)
+if (cmd == "xentaupload"):
+	os.system("LANGUAGE=" + language + " " + cmd + " " + "/etc/xentaos/info")
+else:	
+	if (cmd != "xentasystem"):
+		os.system("LANGUAGE=" + language + " " + cmd)
+

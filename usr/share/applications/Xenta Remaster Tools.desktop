@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Xenta Remaster Tools
+Comment=Perkakas Remastering Live CD
+Exec=gksu /usr/bin/xentaremaster
+Icon=xentaremaster
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;System;Settings;
+StartupNotify=false
