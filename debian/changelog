@@ -1,3 +1,9 @@
+xentaremaster (2.3.3) arok; urgency=medium
+
+  * Perbaikan Berkas debian/*
+
+ -- Dindin Hernawan (Xenta OS) <root@dev.xentaos.org>  Sun, 12 Nov 2017 10:12:40 +0700 
+
 xentaremaster (2.3.2-1) arok; urgency=medium
 
   * Perubahan Icons dan Nama Aplikasi
