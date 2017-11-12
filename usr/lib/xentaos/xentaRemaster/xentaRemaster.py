@@ -32,7 +32,7 @@ class Reconstructor:
         self.gladefile = '/usr/lib/xentaos/xentaRemaster/xentaRemaster.glade'
         self.iconFile = '/usr/lib/xentaos/xentaRemaster/icon.png'
 
-        self.appName = "Xenta Remaster v3.2.2 - Perkakas Remastering Live CD"
+        self.appName = "Xenta Remaster v2.3.3 - Perkakas Remastering Live CD"
         self.codeName = " \"Arok\" "
         self.devInProgress = False
         self.updateId = "321"
