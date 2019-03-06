@@ -29,7 +29,7 @@ msgid "INFO: Creating mount directory..."
 msgstr ""
 
 #: usr/lib/xentaos/xentaConstructor/xentaConstructor.py:138
-msgid "Linux xenta 7 Gloria XXX"
+msgid "Linux xenta 2.0 Batik XXX"
 msgstr ""
 
 #: usr/lib/xentaos/xentaConstructor/xentaConstructor.py:211

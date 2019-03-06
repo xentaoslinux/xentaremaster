@@ -32,8 +32,8 @@ class Reconstructor:
         self.gladefile = '/usr/lib/xentaos/xentaRemaster/xentaRemaster.glade'
         self.iconFile = '/usr/lib/xentaos/xentaRemaster/icon.png'
 
-        self.appName = "Xenta Remaster v2.3.3 - Perkakas Remastering Live CD"
-        self.codeName = " \"Arok\" "
+        self.appName = "Xenta Remaster v2.3.4 - Perkakas Remastering Live CD"
+        self.codeName = " \"Batik\" "
         self.devInProgress = False
         self.updateId = "321"
         self.devRevision = "071211"
@@ -133,9 +133,9 @@ class Reconstructor:
 		currentProject = os.environ['HOME']
 	self.wTree.get_widget("entryWorkingDir").set_text(currentProject)	
         # set default iso filenames
-        self.wTree.get_widget("entryLiveIsoFilename").set_text(os.path.join(currentProject, "xentaos-1.3LTS-xxx.iso"))
+        self.wTree.get_widget("entryLiveIsoFilename").set_text(os.path.join(currentProject, "xentaos-2.0LTS-xxx.iso"))
         # set default descriptions
-        cdDesc = _('Xenta OS 1.3 Arok')
+        cdDesc = _('Xenta OS 2.0 Batik')
         self.wTree.get_widget("entryLiveCdDescription").set_text(cdDesc)
         # set default cd architectures
         self.wTree.get_widget("comboboxLiveCdArch").set_active(0)
